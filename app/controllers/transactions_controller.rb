@@ -1,6 +1,6 @@
 class TransactionsController < ApplicationController
 
-    def show
+    def show  # something isnt right here
         user = User.find(params[:id])
         transactions = user.transactions
         # newTransaction = Transaction.addCurrentPrice(transactions)
