@@ -1,6 +1,10 @@
 class TransactionsController < ApplicationController
 
-    def show  # something isnt right here
+    def index
+        transactions = Transactions.all
+    end
+
+    def show 
         user = User.find(params[:id])
         transactions = user.transactions
         # newTransaction = Transaction.addCurrentPrice(transactions)
