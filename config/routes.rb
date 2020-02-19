@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   # resources :user
   # resources :transactions
   # resources :stocks
+  root "transactions#index"
   resources :users
   resources :transactions
 
